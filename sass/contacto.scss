@@ -1,0 +1,128 @@
+@use "./var.scss";
+
+
+.container__main__contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: auto;
+    flex-grow: 1;
+    max-width: 1200px;
+    min-height: 92dvh;
+    background-color: #fff;
+}
+
+// -------- CONTACT MAIN -----------
+.contact__main{
+    display: flex;
+    flex-direction: column;
+
+    h2{
+        font-family: "title";
+        font-size: 2.5rem;
+        margin: 30px auto;
+    }
+}
+
+.contact__container{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    gap: 10px;
+    justify-items: center;
+    padding: 15px 0px;
+}
+
+.contact__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    max-width: min-content;
+    transition: filter .2s ease-out, text-decoration .2s ease-out;
+    .contact__logo{
+        padding: 20px;
+        width: 60px;
+    }
+    a{
+        font-family: "subtitle";
+        color: #000;
+        padding: 7px 0;
+    }
+}
+
+.contact__item:hover{
+    filter: drop-shadow(5px 5px 5px #000b);
+    text-decoration: solid;
+}
+
+// -------- CONTACT FORM -----------
+
+.contact__form{
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3{
+        margin: 0 0 40px 0;
+        font-family: "subtitle";
+        font-size: 1.8rem
+    }
+    .contact__form-form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "name lastname"
+        "email email"
+        "textarea textarea"
+        "button button";
+        gap: 12px;
+        font-family: "text";
+
+        :first-child{
+            grid-area: name;
+        }
+        :nth-child(2){
+            grid-area: lastname;
+        }
+        :nth-child(3){
+            grid-area: email;
+        }
+        :nth-child(4){
+            grid-area: textarea;
+        }
+        :nth-child(5){
+            grid-area: button;
+        }
+
+        .input__container :is(input, textarea){
+            font-family: inherit;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 7px 5px;
+            border-radius: 2px;
+            border: none;
+            background-color: #0001;
+        }
+
+        .input__container textarea{
+            resize: none;
+            min-height: 150px;
+        }
+
+        .input__container label{
+            font-family: "subtitle";
+        }
+
+        .input__container input[type="submit"]{
+            padding: 10px 0;
+            background-color: var.$bg-color;
+            color: #fff;
+            border: none;
+            font-family: "subtitle";
+            &:hover{
+                opacity: .74;
+            }
+        }
+    }
+}

@@ -1,0 +1,178 @@
+@use "./var.scss";
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    background-color: var.$bg-color ;
+}
+ul{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.item-selected{
+    background-color: var.$bg-color;
+    border-radius: 10px;
+    padding: 7px 10px;
+    a{
+        padding: 15px 10px;
+        font-family: "subtitle";
+    }
+}
+// ------------ NAV SECTION ---------------
+.header__open-nav-button{
+    display: none;
+}
+.header{
+    position: relative;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var.$nav-color;
+    padding: 10px 0;
+    .header__logo-container{
+        margin: 0 20px;
+        img{
+            max-width: 150px;
+        }
+    }
+    .header__nav{
+        margin: 0;
+        .header__nav-list{
+            margin: 0 40px;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .header__nav-list-item{
+                text-align: center;
+                padding: 7px 10px;
+                font-family: "text";
+                font-size: clamp(.8rem, 1vw, 1.5rem);
+                transition: transform .2s;
+                a{
+                    color: #000;
+                    text-decoration: none;
+                }
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+
+        }
+    }
+    .header__cart{
+        background-color: var.$bg-color;
+        padding: 7px 10px;
+        border-radius: 10px;
+        transition: transform .3s;
+        a{
+            color: #fff;
+        }
+        span{
+            font-size: clamp(1rem, 1.7vw, 2rem);
+        }
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    .header__checkbox{
+        display: none;
+    }
+}
+
+
+
+.container__main__aboutUs{
+    max-width: 1200px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    background-color: #fff;
+}
+
+.aboutUs__img__fondo{
+    max-width: clamp(400px, 100%, 1920px);
+}
+
+
+.container__aboutus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        text-align: center;
+        font-family: "title";
+        font-size: clamp(1.5rem, 3vw, 2.8rem);
+        margin: 30px;
+    }
+    .aboutUs__img{
+        max-width: 90%;
+        height: auto;
+    }
+    .aboutUs__subtitle{
+        font-family: "subtitle";
+        
+    }
+    .aboutUs__p{
+        font-family: "text";
+        font-size: clamp(1rem, 1.3vw, 1.5rem);
+        max-width: 800px;
+        padding: 0px 20px;
+    }
+}
+
+// -------------- NAV QUERIES ------------
+@media screen and (max-width: 37.5rem) {
+    .header{
+        position: relative;
+        .header__logo-container img{
+            max-width: 70px;
+        }
+        .header__open-nav-button{
+            display: block;
+            color: #fff;
+            font-size: 2rem;
+            position: absolute;
+            top: 7px;
+            right: 10px;
+            z-index: 20;
+        }
+        .header__nav{
+            display: none;
+            background-color: #fff;
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            top: 0px;
+            z-index: -1;
+            .header__nav-list{
+                display: flex;
+                flex-direction: column;
+                height: 40vh;
+                margin: auto;
+                justify-content: space-around;
+                .header__nav-list-item{
+                    a{
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+    
+    .header__checkbox:checked ~ .header__nav{
+        display: flex;
+    }
+    .header__checkbox:checked .header__open-nav-button{
+        color: #000;
+    }
+} 

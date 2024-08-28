@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- LINK CSS -->
+        <link rel="stylesheet" href="../css/styles.css">
+        <!-- LINK DE FONTS -->
+        <link rel="stylesheet" href="../css/fonts.css">
+        <!-- LINK ICONOS DE GOOGLE -->
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Contacto</title>
+</head>
+<body>
+    <header class="header">
+        <input type="checkbox" class="header__checkbox" id="open-menu">
+        <label for="open-menu" class="header__open-nav-button" role="button"><span class="material-symbols-outlined">menu</span></label>
+        <div class="header__logo-container">
+            <img src="../img/Yu-Gi-Oh!.svg" alt="Logo">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-list-item"><a href="../index.html">Inicio</a></li>
+                <li class="header__nav-list-item"><a href="./productos.html">Productos</a></li>
+                <li class="header__nav-list-item"><a href="./contacto.html">Contacto</a></li>
+                <li class="header__cart"><a href="./carrito.html"><span class="material-symbols-outlined">shopping_bag</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container__main__contact">
+        <main class="contact__main">
+            <h2>CONTACTANOS</h2>
+            <div class="contact__container">
+                <div class="contact__item">
+                    <img class="contact__logo" src="../img/instagram.png" alt="Instagram">
+                    <a href="https://www.instagram.com/">Instagram</a>
+                </div>
+                <div class="contact__item">
+                    <img class="contact__logo" src="../img/X.png" alt="Twitter">
+                    <a href="https://twitter.com/?lang=es">X</a>
+                </div>
+                <div class="contact__item">
+                    <img class="contact__logo" src="../img/tik-tok.png" alt="Tik Tok">
+                    <a href="https://www.tiktok.com/es/">Tik Tok</a>
+                </div>
+                <div class="contact__item">
+                    <img class="contact__logo" src="../img/whatsapp.png" alt="Whatsapp">
+                    <a href="https://web.whatsapp.com/">Whatsapp</a>
+                </div>
+            </div>
+
+            <div class="contact__form">
+                <h3>O bien dejanos tu mensaje</h3>
+                <form class="contact__form-form">
+                    <div class="input__container">
+                        <label for="">
+                            Nombre
+                            <input type="text" required>
+                        </label>
+                    </div>
+                    <div class="input__container">
+                        <label for="">
+                            Apellido
+                            <input type="text" required>
+                        </label>
+                    </div> 
+                    <div class="input__container">
+                        <label for="">
+                            Email
+                            <input placeholder="ejemplo@gmail.com" type="email" required>
+                        </label>
+                    </div>
+                    <div class="input__container">
+                        <label for="">
+                            Dejanos tu mensaje
+                            <textarea placeholder="Dejá tu mensaje..." id=""></textarea>
+                        </label>
+                    </div>
+                    <div class="input__container">
+                        <input type="submit">
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    
+</body>
+</html>

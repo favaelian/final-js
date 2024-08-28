@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- LINK DE FONTS -->
+    <link rel="stylesheet" href="../css/fonts.css">
+    <!-- LINK ICONOS DE GOOGLE -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Productos</title>
+</head>
+<body>
+    <header class="header">
+        <input type="checkbox" class="header__checkbox" id="open-menu">
+        <label for="open-menu" class="header__open-nav-button" role="button"><span class="material-symbols-outlined">menu</span></label>
+        <div class="header__logo-container">
+            <img src="../img/Yu-Gi-Oh!.svg" alt="Logo">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-list-item"><a href="../index.html">Inicio</a></li>
+                <li class="header__nav-list-item"><a href="./productos.html">Productos</a></li>
+                <li class="header__nav-list-item"><a href="./contacto.html">Contacto</a></li>
+                <li class="header__cart"><a href="./carrito.html"><span class="material-symbols-outlined">shopping_bag</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container__main__products">
+        <aside class="nav__category">
+            <label for="select">
+                Categorías
+                <select name="categories" id="select">
+                    <option value="all">Todas</option>
+                </select>
+            </label>
+        </aside>
+        <main class="products__container" id="productsContainer">
+            <!-- Los productos se cargarán aquí dinámicamente -->
+        </main>
+    </div>
+    <script src="../data/main.js"></script>
+</body>
+</html>
