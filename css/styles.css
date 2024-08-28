@@ -1,3 +1,16 @@
+h1 {
+  font-size: 3em; /* Tamaño de fuente grande */
+  color: #333; /* Color inicial */
+  text-align: center; /* Centrado del texto */
+  font-family: 'Arial', sans-serif; /* Fuente elegida */
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Transición suave para el hover */
+}
+
+h1:hover {
+  color: #ff8c00; /* Color dorado medio anaranjado */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra de texto para darle más efecto */
+}
+
 body {
   box-sizing: border-box;
   margin: 0;

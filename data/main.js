@@ -63,7 +63,9 @@ document.addEventListener('DOMContentLoaded', () => {
             product.quantity = 1;
             cart.push(product);
         }
-        alert('Producto agregado al carrito');
+
+        // Reemplazando alert por SweetAlert
+        Swal.fire("Producto agregado al carrito!");
         updateCart();
     };
 
@@ -132,9 +134,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     finalizePurchaseButton.addEventListener('click', () => {
         if (cart.length === 0) {
-            alert('El carrito está vacío');
+            // Reemplazando alert por SweetAlert
+            Swal.fire("El carrito está vacío");
         } else {
-            alert('¡Compra finalizada con éxito!');
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: "¡Tu compra fue realizada con éxito!",
+                showConfirmButton: false,
+                timer: 1500
+            });
             cart = [];
             updateCart();
         }
@@ -142,4 +151,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
     updateCart();
 });
-
