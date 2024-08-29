@@ -1,0 +1,121 @@
+[
+    {
+        "id": 1,
+        "category": "Booster Packs",
+        "name": "The Infinite Forbidden",
+        "price": 90.99,
+        "image": "../img/InfiniteForbidden.png"
+    },
+    {
+        "id": 2,
+        "category": "Booster Packs",
+        "name": "Legacy of Destruction",
+        "price": 87.99,
+        "image": "../img/LegacyDestruction.png"
+    },
+    {
+        "id": 3,
+        "category": "Booster Packs",
+        "name": "Maze of Millenia",
+        "price": 85.99,
+        "image": "../img/MazeMillennia.png"
+    },
+    {
+        "id": 4,
+        "category": "Booster Packs",
+        "name": "Phantom Nightmare",
+        "price": 79.99,
+        "image": "../img/PhantomNightmare.png"
+    },
+    {
+        "id": 5,
+        "category": "Booster Packs",
+        "name": "Battles of Legend",
+        "price": 89.99,
+        "image": "../img/TerminalRevenge.png"
+    },
+    {
+        "id": 6,
+        "category": "Booster Packs",
+        "name": "Valiant Smashers",
+        "price": 79.99,
+        "image": "../img/ValiantSmashers.png"
+    },
+    {
+        "id": 7,
+        "category": "Structure Decks",
+        "name": "Albaz Strike",
+        "price": 149.99,
+        "image": "../img/StructureAlbazStrike.png"
+    },
+    {
+        "id": 8,
+        "category": "Structure Decks",
+        "name": "The Crimson King",
+        "price": 154.99,
+        "image": "../img/StructureCrimsonKing.png"
+    },
+    {
+        "id": 9,
+        "category": "Structure Decks",
+        "name": "Cyber Strike",
+        "price": 179.99,
+        "image": "../img/StructureCyberStrike.png"
+    },
+    {
+        "id": 10,
+        "category": "Structure Decks",
+        "name": "Fire Kings",
+        "price": 159.99,
+        "image": "../img/StructureFireKings.png"
+    },
+    {
+        "id": 11,
+        "category": "Starters Decks",
+        "name": "Codebreaker",
+        "price": 104.99,
+        "image": "../img/StarterCodebreaker.png"
+    },
+    {
+        "id": 12,
+        "category": "Starters Decks",
+        "name": "Egyptian God",
+        "price": 209.99,
+        "image": "../img/StarterDiosEgipcio.png"
+    },
+    {
+        "id": 13,
+        "category": "Starters Decks",
+        "name": "2-Player Starter Set",
+        "price": 204.99,
+        "image": "../img/PlayerStarter.png"
+    },
+    {
+        "id": 14,
+        "category": "Latas",
+        "name": "Batallas Antiguas",
+        "price": 509.99,
+        "image": "../img/LataBatallasAntiguas.png"
+    },
+    {
+        "id": 15,
+        "category": "Latas",
+        "name": "Dioses del Faraón",
+        "price": 539.99,
+        "image": "../img/LataDiosesFaraon.png"
+    },
+    {
+        "id": 16,
+        "category": "Latas",
+        "name": "Recuerdos Perdidos",
+        "price": 549.99,
+        "image": "../img/LataRecuerdosPerdidos.png"
+    },
+    {
+        "id": 17,
+        "category": "Latas",
+        "name": "Oro Sellado",
+        "price": 559.99,
+        "image": "../img/LataOroSellado.png"
+    }
+]
