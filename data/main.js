@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let products = [];
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-    // Cargar productos desde el archivo JSON y renderizarlos
+    // Cargar productos desde el archivo JSON
     fetch('../data/productos.json')
         .then(response => response.json())
         .then(data => {
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
             cart.push(product);
         }
 
-        // Reemplazando alert por SweetAlert
+        // SweetAlert
         Swal.fire("Producto agregado al carrito!");
         updateCart();
     };
@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     finalizePurchaseButton.addEventListener('click', () => {
         if (cart.length === 0) {
-            // Reemplazando alert por SweetAlert
+            // SweetAlert
             Swal.fire("El carrito está vacío");
         } else {
             Swal.fire({
