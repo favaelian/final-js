@@ -1,8 +1,9 @@
+@charset "UTF-8";
 h1 {
   font-size: 3em; /* Tamaño de fuente grande */
   color: #333; /* Color inicial */
   text-align: center; /* Centrado del texto */
-  font-family: 'Arial', sans-serif; /* Fuente elegida */
+  font-family: "Arial", sans-serif; /* Fuente elegida */
   transition: color 0.3s ease, text-shadow 0.3s ease; /* Transición suave para el hover */
 }
 
@@ -302,7 +303,6 @@ ul {
   max-width: 1200px;
   min-height: 92dvh;
   background-color: #fff;
-  row-gap: 15px;
 }
 .container__main h2 {
   font-family: "title";
@@ -323,6 +323,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 10px 0px;
   padding: 15px 12px;
 }
 .cart__item .cart__item__name {

@@ -10,7 +10,6 @@
     max-width: 1200px;
     min-height: 92dvh;
     background-color: #fff;
-    row-gap: 15px;
     h2{
         font-family: "title";
         font-size: 2.5rem;
@@ -32,6 +31,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 10px 0px;
     padding: 15px 12px;
     .cart__item__name{
         display: flex;
